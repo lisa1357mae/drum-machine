@@ -1,45 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Pattern from './models/pattern';
 import Sequence from './models/sequence';
 import Song from './models/song';
 import Instrument from './models/instrument';
-
-class Pad extends Component {
-
-  render() {
-    const { name } = this.props;
-    let lightOnStyle, lightOffStyle;
-    switch (name) {
-      case 'HiHat':
-        lightOnStyle = 'hh-circle-active';
-        lightOffStyle = 'hh-circle';
-        break;
-      case 'Snare':
-        lightOnStyle = 'sd-circle-active';
-        lightOffStyle = 'sd-circle';
-        break;
-      case 'Kick':
-        lightOnStyle = 'k-circle-active';
-        lightOffStyle = 'k-circle';
-        break;
-    };
-    return (
-      <div><div class={this.props.lightOn ? lightOnStyle : lightOffStyle}><p className='pad'>{name}</p></div></div>
-    );
-  }
-}
+import Pad from './components/Pad';
 
 class App extends Component {
   constructor(props) {
     super(props);
     const hhPattern = new Pattern([false, true, false, true, false, true, false, true]);
-    const sdPattern = new Pattern([false, false, false, true, false, false, false, true]);
+    const sdPattern = new Pattern([false, false, true, false, false, false, true, false]);
     const kPattern = new Pattern([true, true, true, true, true, true, true, true]);
 
     this.state = {
-
       hhPattern,
       sdPattern,
       kPattern,
@@ -56,8 +30,6 @@ class App extends Component {
 
   setLight = (instrName, stepNum) => {
     const stepNumInSeq = stepNum % 8;
-   // const prevStepNumInSeq = stepNumInSeq === 0 ? 7 : stepNumInSeq - 1;
-
     let lights;
     switch (instrName) {
       case 'HiHat':
@@ -89,28 +61,25 @@ class App extends Component {
     const sdPads = [];
     const kPads = [];
     for (let i=0; i<8; i++) {
-      hhPads.push(<Pad name='HiHat' lightOn={this.state.hhLights[i]} />);
-      sdPads.push(<Pad name='Snare' lightOn={this.state.sdLights[i]} />);
-      kPads.push(<Pad name='Kick' lightOn={this.state.kLights[i]} />);
+      hhPads.push(<Pad name='HiHat' lightOn={this.state.hhLights[i]} key={i} />);
+      sdPads.push(<Pad name='Snare' lightOn={this.state.sdLights[i]} key={i} />);
+      kPads.push(<Pad name='Kick' lightOn={this.state.kLights[i]} key={i}/>);
     }
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Rhythm Composer LM-808</h2>  
+          <h2>Rhythm Sequencer LM-808</h2>  
         </div>
         <div className="grid-container">
           {hhPads}
           {sdPads}
           {kPads}
         </div>
-        <div className="btn-container">
-        <div className="btn-group">
-        <p><button type='button' className="play-button" onClick={this.state.song.play}>play</button></p>
-        <p><button type='button' className="stop-button" onClick={this.state.song.stop}>stop</button></p>
+        <div className="button-container">
+          <button type="button" className="child" id="slide_start_button" onClick={this.state.song.play}>play</button>
+          <button type="button" className="child" id="slide_stop_button"  onClick={this.state.song.stop}>stop</button>
         </div>
         </div>
-      </div>
     );
   }
 }

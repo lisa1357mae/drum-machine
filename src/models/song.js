@@ -4,7 +4,7 @@ class Song {
         this.seqs = seqs;
         this.stepNum = 0;
         this.playing = false;
-        this.stepsPerBeat = 2;
+        this.stepsPerBeat = 2; //eighth notes
         this.setBpm(bpm);
         this.play = this.play.bind(this);
     }

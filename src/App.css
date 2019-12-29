@@ -3,23 +3,25 @@
 .App {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+ padding-bottom: 220px;
+ background-color: #ced2de;
   
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
-.App-header {
+.App-header { 
   background-color: #263040;
   height: 150px;
   padding: 20px;
   color: white;
+  margin-top: 10px;
 }
 
 .App-intro {
   font-size: large;
+}
+h2 {
+  margin-top: 54px;
 }
 
 .k-circle {
@@ -30,6 +32,7 @@
   width: 20px;
  margin-left: 10px;
 }
+
 .k-circle-active {
   background:  red;
   border-radius: 50%;
@@ -38,6 +41,7 @@
  margin-left: 10px;
  border-color: black;
 }
+
 .pad {
   font-size: 10px;
   margin-left: 54px;
@@ -88,8 +92,8 @@
   grid-gap: 10px;
   background-color:#373d47;
   padding: 40px;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 95px;
+  margin-left: 95px;
   margin-top: 50px;
   border-radius: 5px;
 }
@@ -100,55 +104,32 @@
   padding: 40px 0;
   font-size: 30px;
   border-radius: 5px;
-  
 }
 
+.button-container {
+ justify-content: center;
+}
 
-.btn-group button {
-  background-color: orange; /* Green background */
-  color: black; /* White text */
-  padding: 20px 34px;/* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  float: left; /* Float the buttons side by side */
-  margin-right: 10px;
+.child {
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 10px; 
   margin-left: 10px;
+  background-color: orange;
+  color: black; 
   border-radius: 5px;
   font-size: 14px;
   font-family: 'Josefin Sans', sans-serif;
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
-
-
+          width: 130px;
 }
 
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
- 
-}
-
-.btn-group button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
-}
-
-/* background color on hover */
-.btn-group button:hover {
+.button-container button:hover {
   background-color: orangered;
- 
-}
-
-.btn-container {
- margin: auto;
- text-align: center;
- margin-left: 532px;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
 
 

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #263040;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.k-circle {
+  background: crimson;
+  opacity: 0.2;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+ margin-left: 10px;
+}
+.k-circle-active {
+  background:  red;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+ margin-left: 10px;
+ border-color: black;
+}
+.pad {
+  font-size: 10px;
+  margin-left: 54px;
+  margin-top: 4px;
+  padding-top: 4px;
+}
+
+.sd-circle {
+  background: rgb(243, 197, 113);
+  opacity: 0.2;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+ margin-left: 10px;
+}
+
+.sd-circle-active {
+  background: #e36230;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+  border-color: black;
+  
+}
+
+.hh-circle {
+  background: #e8e4a9;
+  opacity: 0.2;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+ margin-left: 10px;
+}
+
+.hh-circle-active {
+  background:#ebdd10;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+ margin-left: 10px;
+ border-color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color:#373d47;
+  padding: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 40px 0;
+  font-size: 30px;
+  border-radius: 5px;
+  
+}
+
+
+.btn-group button {
+  background-color: orange; /* Green background */
+  color: black; /* White text */
+  padding: 20px 34px;/* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+
+
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* background color on hover */
+.btn-group button:hover {
+  background-color: orangered;
+ 
+}
+
+.btn-container {
+ margin: auto;
+ text-align: center;
+ margin-left: 532px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+

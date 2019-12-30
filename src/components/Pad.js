@@ -19,7 +19,7 @@ class Pad extends Component {
           lightOffStyle = 'k-circle';
           break;
         default:
-          console.error('wrong instrument');
+         ('default pad');
       };
       return (
         <div><div className={this.props.lightOn ? lightOnStyle : lightOffStyle}><p className='pad'>{name}</p></div></div>

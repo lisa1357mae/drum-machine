@@ -49,7 +49,7 @@ class App extends Component {
         this.setState({kLights: lights});
         break;
         default:
-          console.error('check lights');
+          ('default instrument');
     }
   }
 

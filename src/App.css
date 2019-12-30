@@ -3,8 +3,8 @@
 .App {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
- padding-bottom: 220px;
- background-color: #ced2de;
+  padding-bottom: 220px;
+  background-color: #8bbabb;
   
 }
 
@@ -43,7 +43,7 @@ h2 {
 }
 
 .pad {
-  font-size: 10px;
+  font-size: 11px;
   margin-left: 54px;
   margin-top: 4px;
   padding-top: 4px;
@@ -53,35 +53,34 @@ h2 {
   background: rgb(243, 197, 113);
   opacity: 0.2;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   margin-left: 10px;
 }
 
 .sd-circle-active {
   background: #e36230;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   margin-left: 10px;
   border-color: black;
-  
 }
 
 .hh-circle {
-  background: #e8e4a9;
+  background-color: #e8e4a9;
   opacity: 0.2;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   margin-left: 10px;
 }
 
 .hh-circle-active {
   background:#ebdd10;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   margin-left: 10px;
   border-color: black;
 }
@@ -91,7 +90,7 @@ h2 {
   grid-template-columns: auto auto auto auto auto auto auto auto;
   grid-gap: 10px;
   background-color:#373d47;
-  padding: 40px;
+  padding: 50px;
   margin-right: 95px;
   margin-left: 95px;
   margin-top: 50px;
@@ -99,7 +98,7 @@ h2 {
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #faf6e9;
   text-align: center;
   padding: 40px 0;
   font-size: 30px;
@@ -110,6 +109,10 @@ h2 {
  justify-content: center;
 }
 
+.button-container button:hover {
+  background-color: orangered;
+}
+
 .child {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -118,7 +121,9 @@ h2 {
   margin-left: 10px;
   background-color: orange;
   color: black; 
+  border-color: #373d47;
   border-radius: 5px;
+  border-width: 3px;
   font-size: 14px;
   font-family: 'Josefin Sans', sans-serif;
   outline: 0;
@@ -126,9 +131,3 @@ h2 {
           box-shadow: none;
           width: 130px;
 }
-
-.button-container button:hover {
-  background-color: orangered;
-}
-
-

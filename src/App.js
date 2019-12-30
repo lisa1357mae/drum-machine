@@ -49,7 +49,7 @@ class App extends Component {
         this.setState({kLights: lights});
         break;
         default:
-          ('default instrument');
+          console.log('default instrument');
     }
   }
 
@@ -65,7 +65,7 @@ class App extends Component {
     for (let i=0; i<8; i++) {
       hhPads.push(<Pad name='HiHat' lightOn={this.state.hhLights[i]} key={i} />);
       sdPads.push(<Pad name='Snare' lightOn={this.state.sdLights[i]} key={i} />);
-      kPads.push(<Pad name='Kick' lightOn={this.state.kLights[i]} key={i}/>);
+      kPads.push(<Pad name='Kick' lightOn={this.state.kLights[i]} key={i} />);
     }
     return (
       <div className="App">

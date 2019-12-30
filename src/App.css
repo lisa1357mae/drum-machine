@@ -8,7 +8,6 @@
   
 }
 
-
 .App-header { 
   background-color: #263040;
   height: 150px;
@@ -20,6 +19,7 @@
 .App-intro {
   font-size: large;
 }
+
 h2 {
   margin-top: 54px;
 }
@@ -30,7 +30,7 @@ h2 {
   border-radius: 50%;
   height: 20px;
   width: 20px;
- margin-left: 10px;
+  margin-left: 10px;
 }
 
 .k-circle-active {
@@ -38,8 +38,8 @@ h2 {
   border-radius: 50%;
   height: 20px;
   width: 20px;
- margin-left: 10px;
- border-color: black;
+  margin-left: 10px;
+  border-color: black;
 }
 
 .pad {
@@ -55,7 +55,7 @@ h2 {
   border-radius: 50%;
   height: 20px;
   width: 20px;
- margin-left: 10px;
+  margin-left: 10px;
 }
 
 .sd-circle-active {
@@ -74,7 +74,7 @@ h2 {
   border-radius: 50%;
   height: 20px;
   width: 20px;
- margin-left: 10px;
+  margin-left: 10px;
 }
 
 .hh-circle-active {
@@ -82,8 +82,8 @@ h2 {
   border-radius: 50%;
   height: 20px;
   width: 20px;
- margin-left: 10px;
- border-color: black;
+  margin-left: 10px;
+  border-color: black;
 }
 
 .grid-container {
@@ -111,7 +111,6 @@ h2 {
 }
 
 .child {
-
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 10px;

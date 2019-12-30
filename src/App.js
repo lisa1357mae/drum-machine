@@ -9,9 +9,9 @@ import Pad from './components/Pad';
 class App extends Component {
   constructor(props) {
     super(props);
-    const hhPattern = new Pattern([false, true, false, true, false, true, false, true]);
+    const hhPattern = new Pattern([true, true, true, true, true, true, true, true]);
     const sdPattern = new Pattern([false, false, true, false, false, false, true, false]);
-    const kPattern = new Pattern([true, true, true, true, true, true, true, true]);
+    const kPattern = new Pattern([true, false, true, false, true, false, true, false]);
 
     this.state = {
       hhPattern,
@@ -48,6 +48,8 @@ class App extends Component {
         lights[stepNumInSeq] = true;
         this.setState({kLights: lights});
         break;
+        default:
+          console.error('check lights');
     }
   }
 

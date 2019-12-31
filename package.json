@@ -1,6 +1,7 @@
 {
   "name": "drum-machine",
   "version": "0.1.0",
+  "license": "UNLICENSED",
   "private": true,
   "dependencies": {
     "react": "^16.12.0",
